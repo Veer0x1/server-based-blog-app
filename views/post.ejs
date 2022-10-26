@@ -1,0 +1,10 @@
+<%- include('partials/header'); -%>
+<% postArray.forEach((element) => { %>
+    <% if(element.title===postId){ %>
+        <h2><%= element.title %></h2>
+        <p><%= element.content %></p>
+   <% } %>
+  
+ <%});%>
+
+<%- include('partials/footer'); -%>
